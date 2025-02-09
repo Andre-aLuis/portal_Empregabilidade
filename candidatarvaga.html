@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatar-se à Vaga - Plataforma de Empregabilidade LGBTQIA+</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Adicione o seu CSS aqui -->
+</head>
+<body>
+    <div class="container">
+        <h2>Candidatura à Vaga: Desenvolvedor Full Stack</h2>
+
+        <form action="/enviar-candidatura" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome_completo">Nome Completo:</label>
+                <input type="text" id="nome_completo" name="nome_completo" required placeholder="Digite seu nome completo">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+                <label for="curriculo">Currículo (PDF, DOCX):</label>
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf,.docx" required>
+
+                <label for="carta_apresentacao">Carta de Apresentação (opcional):</label>
+                <textarea id="carta_apresentacao" name="carta_apresentacao" placeholder="Escreva uma breve carta de apresentação (opcional)"></textarea>
+
+                <label for="linkedin">Perfil do LinkedIn (opcional):</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="Digite o link para o seu perfil do LinkedIn">
+
+                <button type="submit">Enviar Candidatura</button>
+            </div>
+        </form>
+
+        <p><a href="/detalhesvagas.html">Voltar para os detalhes da vaga</a></p>
+        <p><a href="/painelcandidato.html">Voltar para o painel do candidato</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Empregabilidade LGBTQIA+</title>
+    <!-- Inclusão do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">Empregabilidade LGBTQIA+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="cadastrosuario.html" class="nav-link">Cadastro de Usuário</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="cadastroempresa.html" class="nav-link">Cadastro de Empresas</a></li>
+                    <li class="nav-item"><a href="listagemvagas.html" class="nav-link">Listagem de Vagas</a></li>
+                    <li class="nav-item"><a href="painelcandidato.html" class="nav-link">Painel do Candidato</a></li>
+                    <li class="nav-item"><a href="painelempresa.html" class="nav-link">Painel da Empresa</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Carrossel de Vagas -->
+        <section class="carrossel">
+            <h2 class="text-center mb-4">Oportunidades de Trabalho</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3>Desenvolvedor Full Stack</h3>
+                        <p><strong>Empresa:</strong> Tech Innovations</p>
+                        <p><strong>Localização:</strong> São Paulo, SP (Remoto disponível)</p>
+                        <a href="/detalhes-vaga/1" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Designer Gráfico</h3>
+                        <p><strong>Empresa:</strong> Creatives Co.</p>
+                        <p><strong>Localização:</strong> Rio de Janeiro, RJ (Presencial)</p>
+                        <a href="/detalhes-vaga/2" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Analista de Marketing Digital</h3>
+                        <p><strong>Empresa:</strong> Digital Leaders</p>
+                        <p><strong>Localização:</strong> Curitiba, PR (Remoto disponível)</p>
+                        <a href="/detalhes-vaga/3" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Descrição do Portal -->
+        <section class="descricao-portal mt-5">
+            <h2>Sobre o Portal</h2>
+            <p>O portal de Empregabilidade LGBTQIA+ foi criado para ajudar empresas inclusivas e pessoas LGBTQIA+ a se conectarem de forma segura e respeitosa no mercado de trabalho. Nosso objetivo é garantir oportunidades de emprego acessíveis e livres de discriminação, oferecendo um ambiente profissional que valoriza a diversidade e a inclusão. A plataforma permite que empresas publiquem vagas e que candidatos se inscrevam facilmente, promovendo uma troca contínua de oportunidades.</p>
+            <p>Acreditamos que um mercado de trabalho mais diverso é um mercado mais forte, e estamos comprometidos em transformar a inclusão em um valor presente em todas as esferas profissionais.</p>
+        </section>
+
+        <!-- Missão e Valores -->
+        <section class="missao-valores mt-5">
+            <h2>Missão & Valores</h2>
+            <p><strong>Missão:</strong> Conectar empresas e profissionais LGBTQIA+ a oportunidades de trabalho inclusivas e de respeito, promovendo um ambiente seguro e acolhedor no mercado de trabalho.</p>
+            <p><strong>Valores:</strong> Inclusão, Diversidade, Respeito, Transparência e Crescimento Sustentável.</p>
+        </section>
+    </div>
+
+    <!-- Inclusão do Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

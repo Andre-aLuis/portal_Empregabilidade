@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Empresa - Plataforma de Empregabilidade LGBTQIA+</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Adicione o seu CSS aqui -->
+</head>
+<body>
+    <div class="container">
+        <h2>Painel da Empresa</h2>
+        
+        <div class="perfil">
+            <h3>Bem-vindo, [Nome da Empresa]!</h3>
+            <p><strong>Email de contato:</strong> [email@dominio.com]</p>
+            <p><strong>Data de Cadastro:</strong> 01/01/2025</p>
+            <p><strong>Última Atualização:</strong> 05/02/2025</p>
+            <a href="/cadastroempresa.html" class="button">Editar Perfil</a>
+        </div>
+
+        <h3>Minhas Vagas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vaga</th>
+                    <th>Data de Publicação</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desenvolvedor Full Stack</td>
+                    <td>08/02/2025</td>
+                    <td><span class="status">Aberta</span></td>
+                    <td>
+                        <a href="/editar-vaga/1" class="button">Editar</a>
+                        <a href="/remover-vaga/1" class="button">Remover</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Designer Gráfico</td>
+                    <td>03/02/2025</td>
+                    <td><span class="status">Fechada</span></td>
+                    <td>
+                        <a href="/editar-vaga/2" class="button">Editar</a>
+                        <a href="/remover-vaga/2" class="button">Remover</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Candidaturas Recebidas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vaga</th>
+                    <th>Candidato</th>
+                    <th>Status da Candidatura</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desenvolvedor Full Stack</td>
+                    <td>João Silva</td>
+                    <td><span class="status">Em análise</span></td>
+                    <td><a href="/detalhes-candidato/1" class="button">Ver Detalhes</a></td>
+                </tr>
+                <tr>
+                    <td>Designer Gráfico</td>
+                    <td>Maria Oliveira</td>
+                    <td><span class="status">Entrevista agendada</span></td>
+                    <td><a href="/detalhes-candidato/2" class="button">Ver Detalhes</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Notificações</h3>
+        <div class="notificacoes">
+            <p><strong>Nova candidatura recebida:</strong> João Silva se candidatou à vaga de Desenvolvedor Full Stack.</p>
+            <p><strong>Candidatura atualizada:</strong> Maria Oliveira agendou entrevista para a vaga de Designer Gráfico.</p>
+        </div>
+
+        <a href="/index.html" class="button">Sair</a>
+    </div>
+</body>
+</html>
