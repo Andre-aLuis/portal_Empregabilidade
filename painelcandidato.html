@@ -4,58 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Candidato - Plataforma de Empregabilidade LGBTQIA+</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6vNwzE3bRgsY-vvmlPwrQ1rFv4y8sSkFgRE60Zz5j1+QjGjA2XyA6Y0X6f" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"> <!-- Adicione o seu CSS aqui -->
 </head>
 <body>
-    <div class="container">
-        <h2>Painel do Candidato</h2>
-        <div class="perfil">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Painel do Candidato</h2>
+
+        <!-- Seção de Perfil -->
+        <div class="perfil mb-4 p-4 border rounded bg-light">
             <h3>Olá, [Nome do Candidato]!</h3>
             <p><strong>Email:</strong> [email@dominio.com]</p>
             <p><strong>Data de Cadastro:</strong> 01/01/2025</p>
             <p><strong>Última Atualização:</strong> 05/02/2025</p>
-            <a href="/editar-perfil" class="button">Editar Perfil</a>
+            <a href="/editar-perfil" class="btn btn-primary">Editar Perfil</a>
         </div>
 
+        <!-- Seção de Candidaturas - Grid -->
         <h3>Minhas Candidaturas</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Vaga</th>
-                    <th>Data de Candidatura</th>
-                    <th>Status</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Desenvolvedor Full Stack</td>
-                    <td>08/02/2025</td>
-                    <td><span class="status">Em análise</span></td>
-                    <td><a href="/detalhesvagas.html" class="button">Ver Detalhes</a></td>
-                </tr>
-                <tr>
-                    <td>Designer Gráfico</td>
-                    <td>03/02/2025</td>
-                    <td><span class="status">Entrevista agendada</span></td>
-                    <td><a href="/detalhesvagas.html" class="button">Ver Detalhes</a></td>
-                </tr>
-                <tr>
-                    <td>Analista de Marketing</td>
-                    <td>10/01/2025</td>
-                    <td><span class="status">Rejeitado</span></td>
-                    <td><a href="/detalhesvagas.html" class="button">Ver Detalhes</a></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>Notificações</h3>
-        <div class="notificacoes">
-            <p><strong>Nova vaga disponível:</strong> Designer de UI/UX na Empresa X</p>
-            <p><strong>Entrevista agendada:</strong> Desenvolvedor Full Stack - 12/02/2025</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvedor Full Stack</h5>
+                        <p><strong>Data de Candidatura:</strong> 08/02/2025</p>
+                        <p><strong>Status:</strong> <span class="badge bg-warning">Em análise</span></p>
+                        <a href="/detalhesvagas.html" class="btn btn-info btn-sm">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <h5 class="card-title">Designer Gráfico</h5>
+                        <p><strong>Data de Candidatura:</strong> 03/02/2025</p>
+                        <p><strong>Status:</strong> <span class="badge bg-success">Entrevista agendada</span></p>
+                        <a href="/detalhesvagas.html" class="btn btn-info btn-sm">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">Analista de Marketing</h5>
+                        <p><strong>Data de Candidatura:</strong> 10/01/2025</p>
+                        <p><strong>Status:</strong> <span class="badge bg-danger">Rejeitado</span></p>
+                        <a href="/detalhesvagas.html" class="btn btn-info btn-sm">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <a href="/index.html" class="button">Sair</a>
+
+        <!-- Seção de Notificações - Grid -->
+        <h3 class="mt-5">Notificações</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <p><strong>Nova vaga disponível:</strong> Designer de UI/UX na Empresa X</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <p><strong>Entrevista agendada:</strong> Desenvolvedor Full Stack - 12/02/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão Sair -->
+        <a href="/index.html" class="btn btn-danger w-100 mt-4">Sair</a>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0zRzfnGz4yU/g5B0Fe2ZFH5kxFwQwURw5D2sjrRj6kWlHso/" crossorigin="anonymous"></script>
 </body>
 </html>
