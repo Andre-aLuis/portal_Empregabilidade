@@ -1,6 +1,7 @@
 Squad 66 
 
 Lider - André Luis da Siveira
+Vice Lider - Clênio Silvino Vieira
 
 Foi escolhido o desafio ODS 8 – Trabalho Decente e Crescimento Econômico.
 
@@ -24,7 +25,9 @@ Levantamento de mais dados para aprimiramento do portal.
 Remodelação do banco de acordo com o intuito do portal.
 
 Como será feita a distribuição das atividades entre os integrantes do squad para essa primeira entrega?  
-Como os demais integrantes do squad desapareceram, foi feito somente pelo integrante André Luis da Silveira.
+CDevido a não participação dos demais integrantes, somente os participantes André Luis da Silveira e Clênio Silvino Vieira participaram.
+André Luis - Fará o desenvolvimento;
+Clênio Silvino - Fará a apresentação.
 
 Qual a ferramenta de gerenciamento de projeto será usada para o monitoramento das atividades? Ex: Trello, Asana, Jira, Monday. 
 Pretendo usar o Jira.
